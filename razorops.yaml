@@ -11,9 +11,9 @@ global:
 
 tasks:
   setup:
-    timeout: 7200
+    timeout: 7200  # Set the task timeout to 2 hours (7200 seconds)
     steps:
-    - checkout
+    - checkout  # Clone the git repository
     - run: |
         sudo apt-get update && \
         sudo apt-get install -y python3 python3-pip && \
